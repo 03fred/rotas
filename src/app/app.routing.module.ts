@@ -4,8 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { LoginComponent } from './login/login.component';
-import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
-import { CursoNaoEcontradoComponent } from './curso-nao-econtrado/curso-nao-econtrado.component';
+import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
+import { CursoNaoEcontradoComponent } from './cursos/curso-nao-econtrado/curso-nao-econtrado.component';
 
 const APP_ROUTES: Routes = [
     { path: 'cursos', component: CursosComponent },
