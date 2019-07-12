@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlunoService } from './aluno.service';
 
 @Component({
   selector: 'app-alunos',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlunosComponent implements OnInit {
 
-  constructor() { }
+  private alunos: any[];
+  constructor(private alunoService: AlunoService) {
+
+   this.alunos = alunoService.getAlunos();
+  }
 
   ngOnInit() {
   }
