@@ -1,5 +1,6 @@
 <div class="collection">
-    <a class="collection-item" *ngFor="let c of cursos" [routerLink]="['/curso',c.id]">
+    <a class="collection-item" *ngFor="let c of cursos" [routerLink]="['/cursos', c.id]">
+
         {{c.nome}}
     </a>
 </div>

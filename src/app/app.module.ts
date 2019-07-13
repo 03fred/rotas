@@ -5,22 +5,24 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app.routing.module';
-import { CursosModel } from './cursos/cursos.module';
-import { AlunosModule } from './alunos/alunos.model';
+//import { CursosModel } from './cursos/cursos.module';
+//import { AlunosModule } from './alunos/alunos.model';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent /*,
-    CursosComponent,
+    CursosComponent
     CursoDetalheComponent,
     CursoNaoEcontradoComponent*/
   ],
   imports: [
     BrowserModule,
-    CursosModel,
-    AlunosModule,
+    FormsModule,
+    //CursosModel,
+   // AlunosModule,
     AppRoutingModule
     ///routing
   ],

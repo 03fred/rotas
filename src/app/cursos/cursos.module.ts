@@ -5,11 +5,11 @@ import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 import { CursoNaoEcontradoComponent } from './curso-nao-econtrado/curso-nao-econtrado.component';
 import { CursoService } from './curso.service';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { CursosRoutingModule } from './cursos.routing.module';
 
 @NgModule({
     imports:[CommonModule,
-    RouterModule],
+    CursosRoutingModule],
     exports:[],
     declarations:[
         CursosComponent,
@@ -18,4 +18,4 @@ import { RouterModule } from '@angular/router';
     ],
     providers:[CursoService]
 })
-export class CursosModel{}
+export class CursosModule{}
