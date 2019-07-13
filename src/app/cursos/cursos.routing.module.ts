@@ -6,8 +6,9 @@ import { CursoNaoEcontradoComponent } from './curso-nao-econtrado/curso-nao-econ
 
 const cursosRoutes: Routes = [
     { path: '', component: CursosComponent },
-    { path: ':id', component: CursoDetalheComponent},
     { path: 'curso-nao-encontrado', component: CursoNaoEcontradoComponent},
+    { path: ':id', component: CursoDetalheComponent}
+   
 
 ];
 

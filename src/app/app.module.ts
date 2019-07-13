@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app.routing.module';
 //import { CursosModel } from './cursos/cursos.module';
 //import { AlunosModule } from './alunos/alunos.model';
 import { FormsModule } from '@angular/forms';
+import { AuthService } from './login/auth.service';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule
     ///routing
   ],
+  providers:[AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
